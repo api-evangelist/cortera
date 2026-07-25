@@ -1,7 +1,30 @@
 aid: cortera
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cortera.png
 name: Cortera
-description: Cortera is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Cortera was a business (trade) credit data provider that turned anonymized,
+  contributed accounts-receivable and B2B payment data into forward-looking
+  payment-risk insight, credit scores, and firmographics on private companies
+  so credit teams could spot changes in a customer's financial health. Founded
+  in Massachusetts, Cortera was acquired by Moody's (Moody's Analytics) in 2021
+  and its product line has since been folded into Moody's Company Reference Data
+  / Trade Credit offering, marketed as "Moody's Pulse (formerly Cortera)". The
+  standalone cortera.com domain now 301-redirects to Moody's; there is no
+  independent Cortera developer portal or public self-serve API today — data is
+  delivered through Moody's data-delivery APIs, CRM/ERP connectors, and file
+  feeds. This profile was surfaced as a Battery Ventures portfolio company and
+  is retained as an acquired-company record.
 url: https://raw.githubusercontent.com/api-evangelist/cortera/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +32,33 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: moodys
+x-acquired-year: 2021
+x-successor-product: Moody's Pulse (formerly Cortera) / Moody's Trade Credit
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Business Credit
+- Trade Credit
+- Credit Risk
+- B2B Payments Data
+- Company Data
+- Financial Data
+- Acquired
 apis: []
+common:
+- type: Website
+  url: https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/trade-credit.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
